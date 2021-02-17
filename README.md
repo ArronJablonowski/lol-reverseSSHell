@@ -11,4 +11,5 @@ Usage:
 3. Add winkey.pub (A) to the destination host's authorized_keys file, so SSH can connect outbound to the destination host. 
 
 
-![alt text](https://flic.kr/p/2kCmYLg)
+![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/master/image.png?raw=true)
+
