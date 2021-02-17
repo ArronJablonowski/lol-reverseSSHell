@@ -9,7 +9,8 @@ Usage:
 1. Generate SSH keypair (A) and name them winkey & winkey.pub. Blank/No password for this keypair. Then replace default SSH keys in repo.
 2. Generate SSH keypair (B) and add the Public Key to the "authorized_keys" file in repo. Private key (B) is placed on destination host. 
 3. Add winkey.pub (A) to the destination host's authorized_keys file, so SSH can connect outbound to the destination host. 
-4. From an elevated (admin) Powershell prompt run ./LoL-ReverseSSHell.ps1
+4. Modify the IP, user, and port number at the top of the ./LoL-ReverseSSHell.ps1 script. 
+5. From an elevated (admin) Powershell prompt run ./LoL-ReverseSSHell.ps1
  
 
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image.png?raw=true)
