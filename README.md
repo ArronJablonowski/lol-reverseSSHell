@@ -9,3 +9,6 @@ Usage:
 1. Generate SSH keypair (A) and name them winkey & winkey.pub. Then replace default SSH keys in repo.
 2. Generate SSH keypair (B) and add the Public Key to the "authorized_keys" file in repo. Private key (B) is placed on destination host. 
 3. Add winkey.pub (A) to the destination host's authorized_keys file, so SSH can connect outbound to the destination host. 
+
+
+![alt text](https://flic.kr/p/2kCmYLg)
