@@ -12,6 +12,7 @@ $RPORT = "7777" #Remote local port (Tunnel is over ssh port/default 22)
 # OpenSSH Server 
 $openSSHServer = Get-WindowsCapability -Online | Where-Object Name -like "OpenSSH.Server*"
 Add-WindowsCapability -Online -Name $openSSHServer.Name 
+Start-Sleep 1
 
 # Start & Stop the service to create sshd config files 
 $sshDaemonSrv = Get-Service -Name "sshd"
