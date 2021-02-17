@@ -3,7 +3,7 @@ Living Off the LAN Reverse Shell over SSH for Windows 10
 
 This script will install OpenSSH on Windows 10 via WindowsCapability. Then it will copy the sshd_config file, SSH private key, and authorized_keys file to the proper locations on the Windows host. Finally it creates a reverse SSH connection. The shell serves CMD.exe by default. Once you're in the cmd cli, you can type 'powershell' to get a PS shell. 
 
-* Please generate your OWN SSH KEYs. Use the repo keys only for testing. 
+* Please generate NEW SSH KEYs. Use the repo keys only for testing. 
 
 Usage: 
 1. Generate SSH keypair (A) and name them winkey & winkey.pub. Blank/No password for this keypair. Then replace default SSH keys in repo.
