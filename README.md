@@ -12,5 +12,7 @@ Usage:
 
 * get-help .\lol-reverseSSHell.ps1 -Examples
 
+Remote cmd.exe in a bash terminal: 
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image.png?raw=true)
+![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image02.png?raw=true)
 
