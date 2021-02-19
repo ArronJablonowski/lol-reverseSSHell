@@ -111,4 +111,4 @@ IF (!($sshServerStatus.State -eq "Installed")){
 # Reverse SSH connection to Remote Host
 Write-Verbose "On $DestinationHost type: ssh localhost -p $DestinationBindLocalPort" -Verbose
 ssh.exe -fN -R "$DestinationBindLocalPort`:127.0.0.1:22" "$DestinationUserName@$DestinationHost" -p $DestinationPort -i "$WinPrivateKey" -o "StrictHostKeyChecking=no"  # -vvv ## Uncomment '-vvv' to troubleshoot connections.
-Start-Sleep 10
+
