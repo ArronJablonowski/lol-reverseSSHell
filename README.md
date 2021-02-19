@@ -14,5 +14,6 @@ Usage:
 
 Remote cmd.exe in a bash terminal: 
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image.png?raw=true)
+Remotely executing commands via cmd.exe and powershell:  
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image02.png?raw=true)
 
