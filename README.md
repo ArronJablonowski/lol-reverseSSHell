@@ -1,4 +1,4 @@
-# lol-reverseSSHell
+# lol-reverseSSHell.ps1
 Living Off the LAN Reverse Shell over SSH
 
 This script is intended to make working with SSH reverse shells easier on Windows 10. It will install OpenSSH Server (if missing) on Windows 10 via WindowsCapability. Then it will copy the sshd_config file, SSH private key, and authorized_keys file to the proper locations on the Windows host. Finally it creates a reverse SSH connection. The shell served is CMD.exe by default. Once you're in the cmd.exe cli, you can type 'powershell' to get a PS shell. 
