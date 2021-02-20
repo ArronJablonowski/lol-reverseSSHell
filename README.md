@@ -24,5 +24,5 @@ Running list as I do research:
  
   --- Windows Example --- ssh localhost -p `<localport>`  
   --- Unix Example --------- ssh user123@localhost -p `<localport>` 
-* Admin privleges - Because the shell is ran using an admin PS promt, your shell will have admin privleges without ever knowing the user's admin password. No sudo commands or UAC to prevent elevated privleges. Which means you can modify system files without issue.  
+* Admin privleges - Because the shell is ran using an admin PS promt, the shell will have admin privleges without ever needing to know the user's admin password. No sudo commands or UAC to prevent these elevated privleges. Almost equivlent to a root shell in Unix. Which means you can modify system files without issue.  
 
