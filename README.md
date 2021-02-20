@@ -20,9 +20,9 @@ Remotely executing commands via cmd.exe and powershell:
 Unix vs Windows Reverse SSH Shells, and the Interesting Security Implications for Windows Users
 -----------------------------------------------------------------------------------------------
 Running list as I do research: 
-* Unknown usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost will connect to a shell under the context of the user that initiated it. 
- 
+* Unknown usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost (and port#) will connect to a shell under the context of the user that initiated it. 
   --- Windows Example --- ssh localhost -p `<localport>`  
   --- Unix Example --------- ssh user123@localhost -p `<localport>` 
-* Admin privleges - Because the shell is ran using an admin PS promt, the shell will have admin privleges without ever needing to know the user's admin password. No sudo commands or UAC to prevent these elevated privleges. Almost equivlent to a root shell in Unix. Which means you can modify system files without issue.  
+   
+* Admin privleges - Because the shell is ran using an admin PS promt, the shell will have admin privleges without ever needing to know the user's admin password. After a shell has been initiated, there is no UAC to prevent commands from being ran with elevated privleges. Almost equivlent to a root shell in Unix. Which means you can modify system files without issue.  
 
