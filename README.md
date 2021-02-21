@@ -17,7 +17,7 @@ Remote cmd.exe in a bash terminal via ssh:
 Remotely executing commands via cmd.exe and powershell.exe:  
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image02.png?raw=true)
 
-Windows vs Unix Reverse SSH Shells, and the Interesting Security Implications for Windows Users
+Windows vs Unix Reverse SSH Shells, & the Interesting Security Implications for Windows Users
 -----------------------------------------------------------------------------------------------
 Running list as I do research: 
 * Unknown Usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost and port will connect to a shell under the context of the user that initiated the reverse ssh connection. 
