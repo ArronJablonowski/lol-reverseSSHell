@@ -9,7 +9,7 @@ Required:
   - OpenSSH Server must be installed on Windows host where this script runs. 
   - Two ** NEW ** sets of SSH Keypairs are generated:
       Key Pair A: 
-        - Place the private Key A in repo's root directory. No password protecting private key.
+        - Place the private Key A in repo's root directory. Name it 'winkey'. No password protecting private key.
         - Public key A is added to destination host's authorized_keys file.
       Key Pair B:
         - Private Key B should be placed on destination host recieving the SSH connection. NOT in repo's root.
