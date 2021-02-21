@@ -14,7 +14,7 @@ Usage:
 
 Remote cmd.exe in a bash terminal via ssh: 
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image.png?raw=true)
-Remotely executing commands via cmd.exe and powershell:  
+Remotely executing commands via cmd.exe and powershell.exe:  
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image02.png?raw=true)
 
 Windows VS Unix Reverse SSH Shells, and the Interesting Security Implications for Windows Users
