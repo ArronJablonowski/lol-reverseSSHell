@@ -20,7 +20,7 @@ Remotely executing commands via cmd.exe and powershell:
 Unix vs Windows Reverse SSH Shells, and the Interesting Security Implications for Windows Users
 -----------------------------------------------------------------------------------------------
 Running list as I do research: 
-* Unknown usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost and port will connect to a shell under the context of the user that initiated it. 
+* Unknown usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost and port will connect to a shell under the context of the user that initiated the reverse ssh connection. 
   
   --- Windows Example --- ssh localhost -p `<localport>`  
   --- Unix Example --------- ssh user123@localhost -p `<localport>` 
