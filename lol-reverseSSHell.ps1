@@ -49,7 +49,7 @@ param (
         [Parameter(Mandatory=$false)]
         [string]$DestinationBindLocalPort ="7777", #Desination Host's Local Port to Bind Shell to
         [Parameter(Mandatory=$false)]
-        [string]$WinPrivateKey = "$HOME\.ssh\winkey", # If Yes > INSTALL OpenSSH
+        [string]$WinPrivateKey = "$HOME\.ssh\winkey", # used to point to a Private key 
         [Parameter(Mandatory=$false)]
         [string]$InstallOpenSSHServer = "no" # If Yes > INSTALL OpenSSH
 )   
