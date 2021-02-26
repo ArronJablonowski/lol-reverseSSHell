@@ -11,7 +11,7 @@ Usage:
   - OR - 
 * Double Click .bat file and enter requested information.
 
-Setup Instructions and Help Documentation: 
+Setup Instructions for SSH Keypairs and Help Documentation: 
 * get-help .\lol-reverseSSHell.ps1 
 * get-help .\lol-reverseSSHell.ps1 -Examples
 
