@@ -13,7 +13,6 @@ Usage:
 
 Setup Instructions and Help Documentation: 
 * get-help .\lol-reverseSSHell.ps1 
-
 * get-help .\lol-reverseSSHell.ps1 -Examples
 
 Remote cmd.exe in a bash terminal via ssh: 
