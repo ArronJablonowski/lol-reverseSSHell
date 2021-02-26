@@ -8,7 +8,7 @@ Required:
   - Run .\lol-reverseSSHell.ps1 as Admin. 
   - OpenSSH Server must be installed on Windows host where this script runs. 
   - Two ** NEW ** sets of SSH Keypairs are generated:
-      Key Pair A: 
+      Key Pair A (winkey): 
         - Place the private Key A in repo's root directory. Name it 'winkey'. No password protecting private key.
         - Public key A is added to destination host's authorized_keys file.
       Key Pair B:
