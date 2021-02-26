@@ -25,8 +25,8 @@ Windows vs Unix Reverse SSH Shells, & the Interesting Security Implications for 
 Running list as I do research: 
 * Unknown Usernames are OK - Once you have a reverse connection, Windows does NOT require knowing the username to authenticate to a shell when using keypair authentication. A simple call to localhost and port will connect to a shell under the context of the user that initiated the reverse ssh connection. 
   
-  --- Windows Example --- ssh localhost -p `<localport>`  
-  --- Unix Example --------- ssh user123@localhost -p `<localport>` 
+  - Windows Example --- ssh localhost -p `<localport>`  
+  - Unix Example --------- ssh user123@localhost -p `<localport>` 
    
 * Admin Privleges - Because the shell is ran using admin privleges, and most Windows users run as privleged users, the shell will have admin privleges without ever needing to know the user's name or admin password. After a shell has been initiated, there are no password prompts or UAC alerts to prevent commands from being ran with elevated privleges. Almost equivlent to a root shell in Unix. Which means you can browse the entire file system and modify system files without permissions issues.  
 
