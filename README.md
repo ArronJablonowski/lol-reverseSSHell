@@ -22,5 +22,5 @@ Remotely executing commands via cmd.exe and powershell.exe:
 
 Windows vs Unix Reverse SSH Shells, & the Interesting Security Implications for Windows Users
 -----------------------------------------------------------------------------------------------   
-* Admin Privleges - Because the shell is ran using admin privleges, and most Windows users run as privleged users, the shell will have admin privleges without ever needing to know the user's name or admin password. After a shell has been initiated, there are no password prompts or UAC alerts to prevent commands from being ran with elevated privleges. Almost equivlent to a root shell in Unix. Which means you can browse the entire file system and modify system files without permissions issues.  
+* Admin Privleges - Because the shell is ran using admin privleges, and most Windows users run as privleged users, the shell will have admin privleges without ever needing to know the admin password. After a shell has been initiated, there are no password prompts or UAC alerts to prevent commands from being ran with elevated privleges. Almost equivlent to a root shell in Unix. Which means you can browse the entire file system and modify system files without permissions issues.  
 
