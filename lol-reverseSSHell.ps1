@@ -85,7 +85,12 @@ function InstallSSHServer() {
  
     #Copy Windows Private Key 
     copy-item ".\winkey" "$HOME\.ssh\winkey" -Force # copy priv key for reverse connection 
-    start-sleep 5
+    
+    # Fix priv key permissions  
+    icacls "$HOME\.ssh\winkey" /inheritance:r
+    start-process "icacls.exe" -ArgumentList '"$HOME\.ssh\winkey" /grant:r "$env:USERNAME":"(R)"'
+    
+    start-sleep 5 # Wait for service to finish starting 
 }
 
 # Check if OpenSSH Server is Installed and Warn if NOT installed. 
