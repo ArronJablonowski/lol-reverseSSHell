@@ -6,7 +6,7 @@ This script is intended to make SSH reverse shells easier to initiate on Windows
 
 * Please generate NEW SSH KEYs. Use the repo's keys only for testing. 
 
-Usage: 
+## Usage: 
 ```Bash
 .\lol-reverseSSHell.ps1 -DestinationUserName <user> -DestinationHost <IP Address>
 ```
@@ -18,7 +18,7 @@ Usage:
 Double Click .bat file and enter requested information.
 ```
 
-Setup Instructions for SSH Keypairs and Help Documentation: 
+## Setup Instructions for SSH Keypairs and Help Documentation: 
 ```Bash
 get-help .\lol-reverseSSHell.ps1 
 ```
