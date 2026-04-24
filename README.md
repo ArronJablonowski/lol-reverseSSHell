@@ -1,7 +1,7 @@
 # lol-reverseSSHell.ps1
 Living Off the LAN - Reverse SSHell
 
-This script is designed to facilitate SSH reverse shells on Windows 10 by leveraging OpenSSH Server. Instead of relying on NetCat (NCat), it uses OpenSSH for seamless 
+This script is designed to facilitate SSH reverse shells on Windows 10/11 by leveraging OpenSSH Server. Instead of relying on NetCat (NCat), it uses OpenSSH for seamless 
 forwarding of a CMD.exe shell. If the required OpenSSH server is not installed on the host machine, the script can automatically install it using Windows capabilities or DISM.
 
 ## Setup Instructions
