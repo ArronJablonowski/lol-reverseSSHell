@@ -32,3 +32,4 @@ Remote cmd.exe in a bash terminal via ssh:
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image.png?raw=true)
 Remotely executing commands via cmd.exe and powershell.exe:  
 ![alt text](https://github.com/ArronJablonowski/lol-reverseSSHell/blob/main/image02.png?raw=true)
+*note new files created on Windows desktop* 
